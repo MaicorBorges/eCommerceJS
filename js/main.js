@@ -1,11 +1,11 @@
 let productos = [];
 
-fetch("./productos.json")
+fetch("./js/productos.json")
     .then(response => response.json())
-    .then(data => (
-        productos = data;
-        cargarProductos(productos);
-    ))
+    .then(data => {
+        productos = data
+        cargarProductos(productos)
+    });
 
 
 const contenedorProductos = document.getElementById("contenedor-productos");
