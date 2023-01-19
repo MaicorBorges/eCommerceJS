@@ -1,0 +1,155 @@
+
+[
+
+    {
+        "id": "producto-01",
+        "titulo": "Cuenco 1",
+        "imagen": "./img/C1.png",
+        "categoria": {
+            "nombre": "Cuenco",
+            "id": "cuenco"
+        },
+        "precio": 100
+    },
+    {
+        "id": "producto-02",
+        "titulo": "Cuenco 2",
+        "imagen": "./img/C2.png",
+        "categoria": {
+            "nombre": "Cuenco",
+            "id": "cuenco"
+        },
+        "precio": 200
+    },
+
+    {
+        "id": "producto-03",
+        "titulo": "Cuenco 3",
+        "imagen": "./img/C3.png",
+        "categoria": {
+            "nombre": "Cuenco",
+            "id": "cuenco"
+        },
+        "precio": 500
+
+    },
+
+    {
+        "id": "producto-04",
+        "titulo": "Cuenco 4",
+        "imagen": "./img/C4.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 300
+
+    },
+
+    {
+        "id": "producto-05",
+        "titulo": "Cuenco 5",
+        "imagen": "./img/C5.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 400
+
+    },
+
+    {
+        "id": "producto-06",
+        "titulo": "Rakú 1",
+        "imagen": "./img/R1.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 800
+
+    },
+
+    {
+        "id": "producto-07",
+        "titulo": "Rakú 2",
+        "imagen": "./img/R2.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 600
+
+    },
+    {
+        "id": "producto-08",
+        "titulo": "Obra 1",
+        "imagen": "./img/O1.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 1000
+
+    },
+
+    {
+        "id": "producto-09",
+        "titulo": "Obra 2",
+        "imagen": "./img/O2.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 1200
+
+    },
+
+    {
+        "id": "producto-10",
+        "titulo": "Obra 3",
+        "imagen": "./img/O3.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 1800
+
+    },
+
+    {
+        "id": "producto-11",
+        "titulo": "Obra 4",
+        "imagen": "./img/O4.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 1500
+
+    },
+
+    {
+        "id": "producto-12",
+        "titulo": "Obra 5",
+        "imagen": "./img/O5.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 2200
+
+    },
+
+    {
+        "id": "producto-13",
+        "titulo": "Obra 6",
+        "imagen": "./img/O6.png",
+        "categoria": {
+            "nombre": "Rakú",
+            "id": "raku"
+        },
+        "precio": 2000
+
+    }
+]
