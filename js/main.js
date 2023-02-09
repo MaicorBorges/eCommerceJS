@@ -31,8 +31,8 @@ function cargarProductos(productosElegidos) {
         div.innerHTML = `
            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="producto-detalles">
-             <h3 class="producto-titulo">${producto.titulo}</h3>
-             <p class="producto-precio">$${producto.precio}</p>
+                <h3 class="producto-titulo">${producto.titulo}</h3>
+                <p class="producto-precio">$${producto.precio}</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
          </div>
          `;
@@ -46,7 +46,7 @@ function cargarProductos(productosElegidos) {
 
 };
 
-
+// filtrar por categorias // 
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -67,6 +67,8 @@ botonesCategorias.forEach(boton => {
     })
 });
 
+//agregar productos al carrito y Local Storage//
+
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
 
@@ -74,10 +76,6 @@ function actualizarBotonesAgregar() {
         boton.addEventListener("click", agregarAlCarrito);
     });
 }
-
-
-
-
 
 
 let productosEnCarrito;
@@ -91,7 +89,7 @@ if (productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-
+// Función y Toast de producto agregado//
 
 function agregarAlCarrito(e) {
 
@@ -113,26 +111,26 @@ function agregarAlCarrito(e) {
             x: "1.5rem",
             y: "1.5rem"
         },
-        onClick: function (){}
+        onClick: function () { }
     }).showToast();
 
+    // chequear si existe en el carrito y aumentar cantidad si ya fue agregado o agregar si aun no lo fue//
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
         productosEnCarrito[index].cantidad++;
     } else {
-        productoAgregado.cantidad = 1;
+        productoAgregado.cantidad = 1;          //agrega una propiedad al objeto del array llamada cantidad y asigna valor 1//
         productosEnCarrito.push(productoAgregado);
     }
-
     actualizarNumerito();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
-
+//actualizar el numero de la cantidad de productos en carrito// 
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;

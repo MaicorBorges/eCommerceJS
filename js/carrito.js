@@ -1,6 +1,12 @@
 
-let productosEnCarrito = localStorage.getItem("productos-en-carrito");
-productosEnCarrito = JSON.parse(productosEnCarrito);
+// let productosEnCarrito = localStorage.getItem("productos-en-carrito");
+//  productosEnCarrito = JSON.parse(productosEnCarrito); 
+
+/* MENSAJE! : Tony si descomento estas dos lineas en las que intento guardar el array con los productos del carrito en el storage 
+me da un error en la consola me dice: Uncaught SyntaxError: Identifier 'productosEnCarrito' has already been declared.
+Logre identificar que es este el problema, pero no entiendo porque sucede ni como solucionarlo  */
+
+
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
@@ -11,7 +17,7 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
-// funcion para cargar productos en el html. DOM // 
+// funcion para cargar productos que se agregan al carrito, atravez del DOM // no entiendo porque no funciona!!! 
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
 

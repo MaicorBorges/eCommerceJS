@@ -6,8 +6,8 @@
         "titulo": "Cuenco 1",
         "imagen": "./img/C1.png",
         "categoria": {
-            "nombre": "Cuenco",
-            "id": "cuenco"
+            "nombre": "Cuencos",
+            "id": "cuencos"
         },
         "precio": 100
     },
@@ -16,8 +16,8 @@
         "titulo": "Cuenco 2",
         "imagen": "./img/C2.png",
         "categoria": {
-            "nombre": "Cuenco",
-            "id": "cuenco"
+            "nombre": "Cuencos",
+            "id": "cuencos"
         },
         "precio": 200
     },
@@ -27,8 +27,8 @@
         "titulo": "Cuenco 3",
         "imagen": "./img/C3.png",
         "categoria": {
-            "nombre": "Cuenco",
-            "id": "cuenco"
+            "nombre": "Cuencos",
+            "id": "cuencos"
         },
         "precio": 500
 
@@ -86,8 +86,8 @@
         "titulo": "Obra 1",
         "imagen": "./img/O1.png",
         "categoria": {
-            "nombre": "Rakú",
-            "id": "raku"
+            "nombre": "Obras",
+            "id": "obras"
         },
         "precio": 1000
 
@@ -98,8 +98,8 @@
         "titulo": "Obra 2",
         "imagen": "./img/O2.png",
         "categoria": {
-            "nombre": "Rakú",
-            "id": "raku"
+            "nombre": "Obras",
+            "id": "obras"
         },
         "precio": 1200
 
@@ -110,8 +110,8 @@
         "titulo": "Obra 3",
         "imagen": "./img/O3.png",
         "categoria": {
-            "nombre": "Rakú",
-            "id": "raku"
+            "nombre": "Obras",
+            "id": "obras"
         },
         "precio": 1800
 
@@ -122,8 +122,8 @@
         "titulo": "Obra 4",
         "imagen": "./img/O4.png",
         "categoria": {
-            "nombre": "Rakú",
-            "id": "raku"
+            "nombre": "Obras",
+            "id": "obras"
         },
         "precio": 1500
 
@@ -134,8 +134,8 @@
         "titulo": "Obra 5",
         "imagen": "./img/O5.png",
         "categoria": {
-            "nombre": "Rakú",
-            "id": "raku"
+            "nombre": "Obras",
+            "id": "obras"
         },
         "precio": 2200
 
@@ -146,8 +146,8 @@
         "titulo": "Obra 6",
         "imagen": "./img/O6.png",
         "categoria": {
-            "nombre": "Rakú",
-            "id": "raku"
+            "nombre": "Obras",
+            "id": "obras"
         },
         "precio": 2000
 
