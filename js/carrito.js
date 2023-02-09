@@ -17,7 +17,7 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
-// funcion para cargar productos que se agregan al carrito, atravez del DOM // no entiendo porque no funciona!!! 
+// funcion para cargar productos que se agregan al carrito, atravez del DOM //
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
 
@@ -69,6 +69,8 @@ function cargarProductosCarrito() {
 }
 cargarProductosCarrito();
 
+// cada elemento del carrito tiene su boton eliminar el cual elimina de a uno los productos, no todos juntos, sino que resta uno// 
+//muestra ademas de un toast cuando se elimna//
 
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
@@ -111,6 +113,10 @@ function eliminarDelCarrito(e) {
 
 }
 
+
+// al vaciar el carrito completamente se muestra un sweet alert preguntando si lo queremos hacer//
+
+
 botonVaciar.addEventListener("click", vaciarCarrito);
 
 function vaciarCarrito() {
@@ -134,11 +140,12 @@ function vaciarCarrito() {
 
 
 }
-
+// suma el precio total segun cantidad y valores de productos//
 function actualizarTotal() {
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     total.innerText = `$ ${totalCalculado}`;
 }
+//esta es la funcion que se ejecuta al comprar un producto, se activan las clases que borran el texto de carrito vacio para mostrar el carrito con productos//
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
